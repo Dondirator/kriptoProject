@@ -1,0 +1,153 @@
+.page {
+  &__our-history {
+    padding-top: 50px;
+    background-image: url(../../../assets/images/photo_5210779367641310001_y\ 1.png);
+    min-height: 500px;
+  }
+}
+.our-history {
+  &__body {
+    padding: 0 20px;
+    width: 60%;
+    float: right; /* блок будет выравниваться по правому краю */
+  }
+
+  &__title {
+  }
+
+  &__value {
+    font-size: 24px;
+    color: black;
+  }
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 24px;
+    }
+    &__body {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    &__value {
+      font-size: 18px;
+      color: black;
+    }
+  }
+}
+/////////////////////////////////
+
+.page {
+  &__links {
+    padding-top: 0px;
+  }
+}
+.links {
+  margin-bottom: 100px;
+  &__body {
+    padding: 0 20px;
+  }
+  &__title-left {
+    margin-left: 0;
+  }
+
+  &__value {
+    padding-top: 20px;
+    margin-left: 15px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  @media (max-width: 767px) {
+    &__value {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 767px) {
+    &__value {
+      font-size: 20px;
+    }
+  }
+
+  &__item-link {
+  }
+}
+.container {
+}
+.item-link {
+  margin-right: 20px;
+  margin-left: 15px;
+  &__value {
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+    padding-top: 60px;
+  }
+
+  &__link {
+    border-top: 2px solid black;
+    padding-top: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #5a964c;
+  }
+
+  &__video {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    iframe {
+      width: 45%;
+      min-height: 300px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__value {
+      padding-top: 30px;
+      font-size: 20px;
+    }
+    &__link {
+      font-size: 20px;
+    }
+    &__video {
+      gap: 15px;
+      iframe {
+        margin: 0 auto;
+        width: 80%;
+        min-height: 250px;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    &__value {
+      padding-top: 25px;
+      font-size: 16px;
+    }
+    &__link {
+      font-size: 16px;
+    }
+    &__video {
+      padding-top: 20px;
+      iframe {
+        min-height: 200px;
+      }
+    }
+  }
+}
+.right {
+  text-align: right;
+  @media (max-width: 767px) {
+    text-align: left;
+  }
+}
+.border {
+  padding-top: 40px;
+  width: 40%;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  @media (max-width: 480px) {
+    padding-top: 20px;
+  }
+}

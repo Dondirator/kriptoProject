@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="container">
+    <div class="header__body">
+      <a href="" class="header__logo">
+        <img src="../../../assets/images/fLogo.png" alt="" />
+      </a>
+      <nav class="header__menu" [ngClass]="{ active: isActive }">
+        <ul class="header__list">
+          <li><a href="" class="header__link">О НАС</a></li>
+          <li><a href="" class="header__link">ПАРТНЕРАМ</a></li>
+        </ul>
+      </nav>
+      <div class="header__lang-nav">
+        <div class="header__lang-btn">RU</div>
+        <div
+          class="header__burger"
+          [ngClass]="{ active: isActive }"
+          (click)="onBurgerClick()"
+        >
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

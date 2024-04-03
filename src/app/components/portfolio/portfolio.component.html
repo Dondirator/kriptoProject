@@ -1,0 +1,26 @@
+<section class="page__portfolio portfolio">
+  <div class="container">
+    <div class="portfolio__body">
+      <h2 class="portfolio__title title-left">Reviews</h2>
+      <div class="portfolio__carousel">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let slide of slides">
+              <img src="{{ slide.img }}" alt="" />
+              <div class="subtitle">{{ slide.title }}</div>
+              <div class="value">{{ slide.content }}</div>
+            </div>
+          </div>
+          <!-- If you need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container1">
+    <div class="icon-container">
+      <div class="icon"></div>
+      <!-- Добавьте аналогично для остальных иконок -->
+    </div>
+  </div>
+</section>
