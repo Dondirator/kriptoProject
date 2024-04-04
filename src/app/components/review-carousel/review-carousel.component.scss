@@ -1,6 +1,6 @@
 .page {
   &__reviews {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 .reviews {
@@ -11,7 +11,7 @@
   }
 
   &__carousel {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 .container {
@@ -25,7 +25,7 @@
   margin: 0 20px;
 }
 .swiper-slide {
-  min-height: 375px;
+  min-height: 400px;
   padding: 20px;
   background-color: #d9d9d9;
   border-radius: 5px;
@@ -48,11 +48,24 @@
     min-height: 250px;
   }
   .subtitle {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
   }
   .value {
     font-size: 16px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 480px) {
+  .swiper-slide {
+    min-height: 225px;
+  }
+  .subtitle {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .value {
+    font-size: 14px;
     font-weight: bold;
   }
 }

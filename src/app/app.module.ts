@@ -9,8 +9,13 @@ import { ForPartnersComponent } from './components/for-partners/for-partners.com
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { ReviewCarouselComponent } from './components/review-carousel/review-carousel.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { QuestionsComponent } from './components/questions/questions.component';
+
 import { AppRoutingModule } from './app-routing.module';
+import { AnimationComponent } from './components/animation/animation.component';
+import { OurHistorySectionComponent } from './components/our-history-section/our-history-section.component';
+
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,9 +27,11 @@ import { AppRoutingModule } from './app-routing.module';
     AboutSectionComponent,
     ReviewCarouselComponent,
     PortfolioComponent,
-    QuestionsComponent,
+    AnimationComponent,
+    OurHistorySectionComponent,
+    ContactFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

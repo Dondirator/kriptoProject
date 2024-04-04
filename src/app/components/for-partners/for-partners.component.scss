@@ -116,11 +116,10 @@
 .accomplishments {
   &__body {
     margin: 0 20px;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
   &__items {
   }
@@ -133,7 +132,7 @@
     border-bottom: 1px dashed black;
   }
   &__row2 {
-    padding-top: 40px;
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 20px;

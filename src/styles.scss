@@ -13,9 +13,11 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+ul {
   margin-block-start: 0;
   margin-block-end: 0;
+  padding-inline-start: 0;
 }
 .title-left {
   background: linear-gradient(to right, #c0c0c0, rgba(255, 255, 255, 0) 100%);

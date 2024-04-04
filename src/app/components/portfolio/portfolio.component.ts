@@ -7,7 +7,7 @@ import Swiper from 'swiper';
   styleUrl: './portfolio.component.scss',
 })
 export class PortfolioComponent {
-  mySwiper: Swiper;
+  mySwiper1: Swiper;
 
   slides = [
     {
@@ -48,38 +48,4 @@ export class PortfolioComponent {
   ];
 
   constructor() {}
-
-  ngAfterViewInit() {
-    this.mySwiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      loop: true,
-      spaceBetween: 30,
-      autoplay: {
-        delay: 3000, // время задержки между слайдами в миллисекундах
-        disableOnInteraction: false, // автопрокрутка не останавливается при взаимодействии пользователя с слайдером
-      },
-
-      breakpoints: {
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        767: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        986: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-      },
-    });
-  }
 }

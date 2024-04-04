@@ -1,5 +1,9 @@
 import { Component, AfterViewInit } from '@angular/core';
 import Swiper from 'swiper';
+import { Autoplay, Navigation } from 'swiper/modules';
+
+Swiper.use([Autoplay, Navigation]);
+
 @Component({
   selector: 'app-review-carousel',
   templateUrl: './review-carousel.component.html',
@@ -50,33 +54,15 @@ export class ReviewCarouselComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.mySwiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      loop: true,
+      slidesPerView: 1.5,
       spaceBetween: 30,
-      autoplay: {
-        delay: 3000, // время задержки между слайдами в миллисекундах
-        disableOnInteraction: false, // автопрокрутка не останавливается при взаимодействии пользователя с слайдером
-      },
+      slidesOffsetBefore: 20,
+      loop: true,
 
       breakpoints: {
-        480: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        767: {
+        768: {
           slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        986: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 20,
+          spaceBetween: 40,
         },
       },
     });

@@ -3,19 +3,19 @@
   }
 }
 .apply {
-  padding-top: 180px;
+  padding-top: 140px;
   background-image: url(../../../assets/images/bgcImg.png);
   background-size: cover;
-  min-height: 400px;
+  min-height: 350px;
   background-position: center 70%;
   background-repeat: no-repeat;
   @media (max-width: 767px) {
+    padding-top: 110px;
     background-position: center center;
-    min-height: 350px;
+    min-height: 280px;
   }
   @media (max-width: 480px) {
-    padding-top: 130px;
-    min-height: 300px;
+    min-height: 230px;
   }
   &__body {
     padding: 0 20px;
@@ -66,6 +66,9 @@
       font-size: 18px;
       width: 160px;
     }
+    &__body {
+      gap: 20px;
+    }
   }
   @media (max-width: 480px) {
     .apply {
@@ -80,6 +83,9 @@
     &__btn {
       font-size: 14px;
       width: 130px;
+    }
+    &__body {
+      gap: 15px;
     }
   }
 }

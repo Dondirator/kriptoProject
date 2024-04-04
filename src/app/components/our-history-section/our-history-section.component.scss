@@ -1,0 +1,52 @@
+.page {
+  &__our-history {
+    padding-top: 35px;
+    background-image: url(../../../assets/images/photo_5210779367641310001_y\ 1.png);
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 767px) {
+      padding-top: 25px;
+    }
+  }
+}
+.our-history {
+  &__container {
+    padding: 30px 0px;
+    display: flex;
+  }
+  .left-block {
+    width: 40%;
+    height: 100%;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__body {
+    padding: 0 20px;
+    width: 60%;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__value {
+    margin: 0 20px;
+    font-size: 24px;
+    color: black;
+    padding-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 24px;
+    }
+    &__body {
+      width: 100%;
+    }
+    &__value {
+      font-size: 18px;
+      color: black;
+    }
+  }
+}
