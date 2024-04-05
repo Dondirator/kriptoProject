@@ -16,6 +16,8 @@ import { OurHistorySectionComponent } from './components/our-history-section/our
 
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     OurHistorySectionComponent,
     ContactFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    TranslocoRootModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

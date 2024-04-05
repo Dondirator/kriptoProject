@@ -1,8 +1,11 @@
 form {
-  height: 69.7vh;
-  padding-top: 200px;
-  margin-bottom: -140px;
+  align-items: center;
   position: relative;
+  padding-top: 180px;
+  padding-bottom: 35px;
+  @media (max-width: 767px) {
+    padding-top: 160px;
+  }
 }
 
 .container {

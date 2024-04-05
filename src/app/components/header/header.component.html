@@ -1,31 +1,37 @@
-<header class="header">
-  <div class="container">
-    <div class="header__body">
-      <a href="" class="header__logo">
-        <img src="../../../assets/images/fLogo.png" alt="" />
-      </a>
-      <nav class="header__menu" [ngClass]="{ active: isActive }">
-        <ul class="header__list">
-          <li routerLinkActive="activee">
-            <a href="" class="header__link" routerLink="about-us">О НАС</a>
-          </li>
-          <li routerLinkActive="activee">
-            <a href="" class="header__link" routerLink="for-partners"
-              >ПАРТНЕРАМ</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="header__lang-nav">
-        <div class="header__lang-btn">RU</div>
-        <div
-          class="header__burger"
-          [ngClass]="{ active: isActive }"
-          (click)="onBurgerClick()"
-        >
-          <span></span>
+<ng-container *transloco="let text">
+  <header class="header">
+    <div class="container">
+      <div class="header__body">
+        <a href="" class="header__logo">
+          <img src="../../../assets/images/fLogo.png" alt="" />
+        </a>
+        <nav class="header__menu" [ngClass]="{ active: isActive }">
+          <ul class="header__list">
+            <li routerLinkActive="activee">
+              <a href="" class="header__link" routerLink="about-us">{{
+                text("navigation.about-us")
+              }}</a>
+            </li>
+            <li routerLinkActive="activee">
+              <a href="" class="header__link" routerLink="for-partners">{{
+                text("navigation.partners")
+              }}</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__lang-nav">
+          <div class="header__lang-btn" (click)="update()">
+            {{ currentLang }}
+          </div>
+          <div
+            class="header__burger"
+            [ngClass]="{ active: isActive }"
+            (click)="onBurgerClick()"
+          >
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
+</ng-container>
