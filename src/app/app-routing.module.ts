@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ForPartnersComponent } from './components/for-partners/for-partners.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/about-us', pathMatch: 'full' },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'for-partners', component: ForPartnersComponent },
+  { path: 'contact-us', component: ContactFormComponent },
 ];
 
 @NgModule({

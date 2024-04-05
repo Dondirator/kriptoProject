@@ -20,7 +20,10 @@ export class ContactFormComponent {
   constructor(private fb: FormBuilder) {} // Inject FormBuilder instead of FormGroup
 
   async send() {
-    emailjs.init('-8OAsCeb0mhkkURgz');
+    emailjs.init({
+      publicKey: '-8OAsCeb0mhkkURgz',
+      blockHeadless: true,
+    });
     let response = await emailjs.send('service_8qb7jeq', 'template_7quqzx3', {
       to_name: this.form.value.from_name,
       from_name: this.form.value.from_email,

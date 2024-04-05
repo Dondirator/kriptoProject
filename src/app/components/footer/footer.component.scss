@@ -59,6 +59,9 @@
       padding: 5px 9px;
       transition: 0.3s ease;
     }
+    &:active {
+      outline: 1px solid black;
+    }
   }
 }
 .container {
