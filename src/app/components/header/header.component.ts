@@ -7,7 +7,7 @@ import { TranslocoService } from '@ngneat/transloco';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  currentLang: string = 'EN';
+  currentLang: string = 'RU';
 
   constructor(public translateService: TranslocoService) {}
   public update() {
