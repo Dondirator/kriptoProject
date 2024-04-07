@@ -1,6 +1,6 @@
 <div class="container">
   <form action="javascript:void(0)" (submit)="send()">
-    <div [formGroup]="form">
+    <form [formGroup]="form">
       <div class="row input-container">
         <div class="form-container">
           <input type="text" required formControlName="from_name" />
@@ -22,6 +22,6 @@
           <input class="form-btn" type="submit" value="Send" />
         </div>
       </div>
-    </div>
+    </form>
   </form>
 </div>
