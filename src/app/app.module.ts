@@ -18,6 +18,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { TranslocoRootModule } from './transloco-root.module';
     ReactiveFormsModule,
     HttpClientModule,
     TranslocoRootModule,
+    RouterModule,
   ],
   exports: [HeaderComponent, FooterComponent],
   providers: [],
