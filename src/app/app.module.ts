@@ -40,6 +40,7 @@ import { TranslocoRootModule } from './transloco-root.module';
     HttpClientModule,
     TranslocoRootModule,
   ],
+  exports: [HeaderComponent, FooterComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
