@@ -1,27 +1,25 @@
 <div class="container">
-  <form action="javascript:void(0)" (submit)="send()">
-    <form [formGroup]="form">
-      <div class="row input-container">
-        <div class="form-container">
-          <input type="text" required formControlName="from_name" />
-          <label>Name</label>
-        </div>
-        <div class="form-container">
-          <input type="text" required formControlName="from_email" />
-          <label>Email</label>
-        </div>
-        <div class="form-container">
-          <input type="text" required formControlName="subject" />
-          <label>Phone Number</label>
-        </div>
-        <div class="form-container">
-          <textarea required formControlName="message"></textarea>
-          <label>Message</label>
-        </div>
-        <div class="form-container">
-          <input class="form-btn" type="submit" value="Send" />
-        </div>
+  <form [formGroup]="form" action="javascript:void(0)" (submit)="send()">
+    <div class="row input-container">
+      <div class="form-container">
+        <input type="text" required formControlName="from_name" />
+        <label>Name</label>
       </div>
-    </form>
+      <div class="form-container">
+        <input type="text" required formControlName="from_email" />
+        <label>Email</label>
+      </div>
+      <div class="form-container">
+        <input type="text" required formControlName="subject" />
+        <label>Phone Number</label>
+      </div>
+      <div class="form-container">
+        <textarea required formControlName="message"></textarea>
+        <label>Message</label>
+      </div>
+      <div class="form-container">
+        <input class="form-btn" type="submit" value="Send" />
+      </div>
+    </div>
   </form>
 </div>
