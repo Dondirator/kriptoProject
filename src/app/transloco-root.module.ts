@@ -1,6 +1,20 @@
-import { provideTransloco, TranslocoModule } from '@ngneat/transloco';
-import { Injectable, isDevMode, NgModule } from '@angular/core';
-import { TranslocoHttpLoader } from './transloco-loader';
+import { HttpClient } from '@angular/common/http';
+import {
+  Translation,
+  TranslocoLoader,
+  TranslocoModule,
+  provideTransloco,
+} from '@ngneat/transloco';
+import { inject, Injectable, isDevMode, NgModule } from '@angular/core';
+
+@Injectable({ providedIn: 'root' })
+export class TranslocoHttpLoader implements TranslocoLoader {
+  private http = inject(HttpClient);
+
+  getTranslation(lang: string) {
+    return this.http.get<Translation>(`/assets/i18n/${lang}.json`);
+  }
+}
 
 @NgModule({
   exports: [TranslocoModule],
@@ -9,7 +23,7 @@ import { TranslocoHttpLoader } from './transloco-loader';
       config: {
         availableLangs: ['ru', 'en'],
         defaultLang: 'ru',
-
+        // Remove this option if your application doesn't support changing language in runtime.
         reRenderOnLangChange: true,
         prodMode: !isDevMode(),
       },
