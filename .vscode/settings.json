@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/16e4e8bb-e24b-43be-b6fb-f4e9187129d4/resourceGroups/rg1/providers/Microsoft.Web/sites/CryptoGenius",
+  "appService.deploySubpath": "dist\\kripto-project"
+}
