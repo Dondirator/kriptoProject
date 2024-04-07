@@ -1,4 +1,8 @@
-import { provideTransloco, TranslocoModule } from '@ngneat/transloco';
+import {
+  provideTransloco,
+  TranslocoModule,
+  TranslocoService,
+} from '@ngneat/transloco';
 import { isDevMode, NgModule } from '@angular/core';
 import { TranslocoHttpLoader } from './transloco-loader';
 
@@ -19,6 +23,7 @@ import { TranslocoHttpLoader } from './transloco-loader';
       },
       loader: TranslocoHttpLoader,
     }),
+    TranslocoService, // Добавьте TranslocoService здесь
   ],
 })
 export class TranslocoRootModule {}
