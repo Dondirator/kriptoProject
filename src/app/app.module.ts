@@ -9,6 +9,7 @@ import { ForPartnersComponent } from './components/for-partners/for-partners.com
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { ReviewCarouselComponent } from './components/review-carousel/review-carousel.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { AboutUsSectionComponent } from './components/components-sections/about-us-section/about-us-section.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AnimationComponent } from './components/animation/animation.component';
@@ -32,6 +33,7 @@ import { TranslocoRootModule } from './transloco-root.module';
     AnimationComponent,
     OurHistorySectionComponent,
     ContactFormComponent,
+    AboutUsSectionComponent,
   ],
   imports: [
     BrowserModule,
