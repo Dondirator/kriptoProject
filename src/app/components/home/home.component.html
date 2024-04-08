@@ -4,14 +4,16 @@
 <ng-container *transloco="let text"
   ><section class="page__our-history our-history">
     <div class="our-history__container container">
-      <div class="left-block">
-        <!-- Здесь можете поместить контент для левого блока -->
-      </div>
-      <div class="our-history__body">
-        <h2 class="our-history__title title-rigth">История зарождения</h2>
-        <p class="our-history__value">
-          {{ text("about-us.about-us") }}
-        </p>
+      <div class="our-history__body-block">
+        <div class="our-history__body">
+          <h2 class="our-history__title title-rigth">История зарождения</h2>
+          <p class="our-history__value">
+            {{ text("about-us.about-us") }}
+          </p>
+        </div>
+        <div class="left-block">
+          <img src="../../../assets/images/about-us-logo.png" alt="" />
+        </div>
       </div>
     </div>
   </section>

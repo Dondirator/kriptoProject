@@ -13,14 +13,22 @@
 }
 .our-history {
   &__container {
+    width: 100%;
+  }
+  &__body-block {
     display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
   }
   .left-block {
+    text-align: center;
+    align-items: center;
+    img {
+      max-width: 90%;
+      height: auto;
+    }
     width: 40%;
     height: 100%;
-    @media (max-width: 767px) {
-      display: none;
-    }
   }
   &__body {
     padding: 0 20px;
@@ -33,7 +41,7 @@
 
   &__value {
     margin: 0 20px;
-    font-size: 24px;
+    font-size: 30px;
     color: black;
     padding-bottom: 20px;
   }
@@ -45,8 +53,34 @@
       width: 100%;
     }
     &__value {
+      font-size: 20px;
+      color: black;
+    }
+
+    &__body-block {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .left-block {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      img {
+        max-width: 55%;
+        height: auto;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    &__value {
       font-size: 18px;
       color: black;
+    }
+    .left-block {
+      img {
+        max-width: 50%;
+        height: auto;
+      }
     }
   }
 }
