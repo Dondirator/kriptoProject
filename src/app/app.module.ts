@@ -13,16 +13,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import { HomeComponent } from './components/home/home.component';
 import { ForPartnersPageComponent } from './components/for-partners-page/for-partners-page.component';
+import { AboutUsSectionComponent } from './components/sections/about-us-section/about-us-section.component';
 
 //
 import { ReviewCarouselSectionComponent } from './components/for-partners-page/review-carousel-section/review-carousel-section.component';
 
 @NgModule({
   declarations: [
+    //import sections
+    AboutUsSectionComponent,
+    //
     AppComponent,
     HeaderComponent,
     FooterComponent,
-
+    //pages
     ContactFormComponent,
     HomeComponent,
     ForPartnersPageComponent,

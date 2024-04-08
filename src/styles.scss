@@ -14,10 +14,17 @@ h2,
 h3,
 h4,
 p,
-ul {
+ul,
+li,
+a {
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
+}
+ul,
+li,
+a {
+  list-style: none;
 }
 .title-left {
   background: linear-gradient(to right, #c0c0c0, rgba(255, 255, 255, 0) 100%);

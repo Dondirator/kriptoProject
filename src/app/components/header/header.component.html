@@ -19,10 +19,21 @@
             </li>
           </ul>
         </nav>
-        <div class="header__lang-nav">
-          <div class="header__lang-btn" (click)="update()">
-            {{ currentLang }}
-          </div>
+        <div class="header__lang-nav lang">
+          <nav class="lang__menu">
+            <ul class="lang__list">
+              <li>
+                <div class="lang__body" (click)="toggleSublist()">
+                  {{ currentLang }}
+                </div>
+                <ul class="sub-lang__list" [ngClass]="{ open: sublistOpen }">
+                  <li *ngFor="let language of secondaryLanguages">
+                    <a (click)="languageChange($event)">{{ language }}</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
           <div
             class="header__burger"
             [ngClass]="{ active: isActive }"

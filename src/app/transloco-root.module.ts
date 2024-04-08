@@ -21,7 +21,7 @@ export class TranslocoHttpLoader implements TranslocoLoader {
   providers: [
     provideTransloco({
       config: {
-        availableLangs: ['ru', 'en'],
+        availableLangs: ['ru', 'en', 'cn'],
         defaultLang: 'ru',
         // Remove this option if your application doesn't support changing language in runtime.
         reRenderOnLangChange: true,
