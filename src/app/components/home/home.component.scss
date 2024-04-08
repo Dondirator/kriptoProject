@@ -1,0 +1,270 @@
+.page {
+  &__apply {
+  }
+}
+.apply {
+  padding-top: 140px;
+  background-image: url(../../../assets/images/bgcImg.png);
+  background-size: cover;
+  min-height: 350px;
+  background-position: center 70%;
+  background-repeat: no-repeat;
+  @media (max-width: 767px) {
+    padding-top: 110px;
+    background-position: center center;
+    min-height: 280px;
+  }
+  @media (max-width: 480px) {
+    min-height: 230px;
+  }
+  &__body {
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  &__value {
+    padding-left: 15px;
+    font-family: Rubik;
+    color: white;
+    font-weight: bold;
+    font-size: 64px;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+  }
+  &__title {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    width: 50%;
+    padding: 5px 15px;
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  }
+  &__btn {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 0px;
+    width: 220px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0px 6px 5px rgba(0, 0, 0, 0.4);
+    &:hover {
+      background-color: #ffffff;
+    }
+    &:active {
+      box-shadow: inset 5px 7px 5px rgba(0, 0, 0, 0.4);
+      outline: 1px solid #474747;
+    }
+  }
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 30px;
+    }
+    &__value {
+      font-size: 52px;
+    }
+    &__btn {
+      font-size: 18px;
+      width: 160px;
+    }
+    &__body {
+      gap: 20px;
+    }
+  }
+  @media (max-width: 480px) {
+    .apply {
+      min-height: 300px !important;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__value {
+      font-size: 38px;
+    }
+    &__btn {
+      font-size: 14px;
+      width: 130px;
+    }
+    &__body {
+      gap: 15px;
+    }
+  }
+}
+
+//////////////// OUR HISTORY COMP
+.page {
+  &__our-history {
+    padding-top: 35px;
+    background-image: url(../../../assets/images/background2.png);
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 767px) {
+      padding-top: 25px;
+    }
+  }
+}
+.our-history {
+  &__container {
+    padding: 30px 0px;
+    display: flex;
+  }
+  .left-block {
+    width: 40%;
+    height: 100%;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__body {
+    padding: 0 20px;
+    width: 60%;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__value {
+    margin: 0 20px;
+    font-size: 24px;
+    color: black;
+    padding-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 24px;
+    }
+    &__body {
+      width: 100%;
+    }
+    &__value {
+      font-size: 18px;
+      color: black;
+    }
+  }
+}
+
+///////////////////////
+///
+///
+/////////////////////////////////
+
+.page {
+  &__links {
+    padding-top: 0px;
+  }
+}
+.links {
+  &__body {
+    padding: 0 20px;
+  }
+  &__title-left {
+    margin-left: 0;
+  }
+
+  &__value {
+    padding-top: 20px;
+    margin-left: 15px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  @media (max-width: 767px) {
+    &__value {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 480px) {
+    &__title-left {
+      width: 90%;
+    }
+  }
+
+  &__item-link {
+  }
+}
+.container {
+}
+.item-link {
+  margin-right: 20px;
+  margin-left: 15px;
+  &__value {
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+    padding-top: 60px;
+  }
+
+  &__link {
+    border-top: 2px solid black;
+    padding-top: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #5a964c;
+  }
+
+  &__video {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    iframe {
+      width: 45%;
+      min-height: 300px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__value {
+      padding-top: 30px;
+      font-size: 20px;
+    }
+    &__link {
+      font-size: 20px;
+    }
+    &__video {
+      gap: 15px;
+      iframe {
+        margin: 0 auto;
+        width: 80%;
+        min-height: 250px;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    &__value {
+      padding-top: 25px;
+      font-size: 16px;
+    }
+    &__link {
+      font-size: 16px;
+    }
+    &__video {
+      padding-top: 20px;
+      iframe {
+        min-height: 200px;
+      }
+    }
+  }
+}
+.right {
+  text-align: right;
+  @media (max-width: 767px) {
+    text-align: left;
+  }
+}
+.border {
+  padding-top: 40px;
+  width: 40%;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  @media (max-width: 480px) {
+    padding-top: 20px;
+  }
+}
