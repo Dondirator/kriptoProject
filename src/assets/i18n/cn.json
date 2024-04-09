@@ -5,5 +5,22 @@
   },
   "about-us": {
     "about-us": "欢迎！我们是Crypto Genius Squad团队。我们从大使计划和在项目中部署节点开始，例如Rizon，BitSong，Gitopia，Desmos，KiChain，Nym，Masa，Medibloc等等。这一经验帮助我们在加密货币和区块链领域发展成专业人士。我们愿意积极参与大使计划，并为它们的发展做出贡献。"
+  },
+  "tasks": {
+    "tasksTitle": "我们能在哪里帮助您？",
+    "taskItem1": "为您的项目开发网站。",
+    "taskItem2": "管理 Telegram 频道，制定内容计划。",
+    "taskItem3": "通过举办活动来维持社区对您项目的兴趣，包括竞赛等。",
+    "taskItem4": "合作管理：寻找合作伙伴、广告平台。",
+    "taskItem5": "为公告创建多样化内容，包括图形和视频。",
+    "taskItem6": "在测试网和主网上设置和维护节点。",
+    "taskItem7": "没有一个错误能逃脱我们经验丰富的开发人员的注意。"
+  },
+  "advantages": {
+    "adTitle": "优势",
+    "adItem1": "我们团队已经合作多年。",
+    "adItem2": "我们是有经验的专家，愿意参与您的大使计划。",
+    "adItem3": "在超过15个项目中的经验。",
+    "adItem4": "我们将适应您的任何任务。"
   }
 }
