@@ -221,6 +221,7 @@
   }
   display: flex;
   &__menu {
+    margin-right: 15px;
   }
 
   &__list {
@@ -228,7 +229,9 @@
 
   &__body {
     display: flex;
+    gap: 6px;
     align-items: center;
+    text-align: center;
     cursor: pointer;
   }
 }
@@ -311,4 +314,21 @@
 
 .open {
   display: block;
+}
+
+//
+.arrow-down {
+  top: 2px;
+  position: absolute;
+  border: solid #000000;
+  border-width: 0px 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  transition: ease 0.5s;
+}
+.arrowup {
+  transform: rotate(225deg);
+  top: 8px;
+  transition: ease 0.5s;
 }

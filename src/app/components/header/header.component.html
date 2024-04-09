@@ -24,7 +24,13 @@
             <ul class="lang__list">
               <li>
                 <div class="lang__body" (click)="toggleSublist()">
-                  {{ currentLang }}
+                  <p>{{ currentLang }}</p>
+                  <div>
+                    <span
+                      class="arrow-down"
+                      [ngClass]="{ arrowup: sublistOpen }"
+                    ></span>
+                  </div>
                 </div>
                 <ul class="sub-lang__list" [ngClass]="{ open: sublistOpen }">
                   <li *ngFor="let language of secondaryLanguages">
