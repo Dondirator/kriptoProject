@@ -106,11 +106,14 @@
     color: white;
     background-color: black;
     &:hover {
-      background-color: #bebebe;
+      transform: scale(0.9);
+      transition: 0.4s ease;
+      background-color: #28a745;
+      color: white;
+      border-radius: 10px;
     }
     &:active {
-      outline: 1px solid rgb(151, 150, 150);
-      box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
+      transform: scale(1);
     }
   }
   @media (max-width: 767px) {
