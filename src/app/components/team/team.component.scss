@@ -1,0 +1,18 @@
+.container {
+  padding: 0px 20px;
+  display: flex;
+}
+.team {
+  width: 100%;
+  position: absolute;
+
+  &__body {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    align-items: center;
+    justify-content: center;
+  }
+}
