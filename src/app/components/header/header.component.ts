@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
@@ -19,10 +20,18 @@ export class HeaderComponent {
     this.status = !this.status;
   }
   constructor(
+    private router: Router,
     private elementRef: ElementRef,
     public translateService: TranslocoService,
     private _translocoService: TranslocoService
-  ) {}
+  ) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0); // Прокрутка страницы вверх при каждом завершении навигации
+      }
+    });
+  }
+
   toggleSublist() {
     this.sublistOpen = !this.sublistOpen;
   }

@@ -1,9 +1,15 @@
 {
   "navigation": {
     "about-us": "ABOUT US",
-    "partners": "FOR PARTNERS"
+    "partners": "FOR PARTNERS",
+    "team": "TEAM"
+  },
+  "about-us-sect": {
+    "value1": "From idea to ",
+    "value2": "success - with CGS"
   },
   "about-us": {
+    "title": "About Us",
     "about-us": "Welcome! We are the Crypto Genius Squad. We started with ambassadorship and node deployment in projects such as Rizon, BitSong, Gitopia, Desmos, KiChain, Nym, Masa, Medibloc, and others. This experience helped us evolve into professionals in the cryptocurrency and blockchain sphere. We are ready to actively participate in ambassadorial projects and contribute to their development."
   },
   "tasks": {
@@ -22,5 +28,8 @@
     "adItem2": "We are experienced specialists ready to participate in your ambassador program.",
     "adItem3": "Experience in over 15 projects.",
     "adItem4": "We will adapt to any of your tasks."
+  },
+  "our-team": {
+    "title": "Our Team"
   }
 }

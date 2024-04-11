@@ -1,11 +1,13 @@
 <app-header></app-header>
-<section class="container">
-  <div class="team__body">
-    <app-team-member
-      *ngFor="let member of teamMembers; let i = index"
-      [teamMember]="member"
-      [index]="i"
-    ></app-team-member>
+<section class="bgi">
+  <div class="container">
+    <div class="team__body">
+      <app-team-member
+        *ngFor="let member of teamMembers; let i = index"
+        [teamMember]="member"
+        [index]="i"
+      ></app-team-member>
+    </div>
   </div>
 </section>
 <app-footer></app-footer>

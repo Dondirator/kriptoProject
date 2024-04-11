@@ -1,9 +1,15 @@
 {
   "navigation": {
-    "about-us": "MYAU",
-    "partners": "MYAU"
+    "about-us": "关于我们",
+    "partners": "MYAU",
+    "team": "我们的团队"
+  },
+  "about-us-sect": {
+    "value1": "从想法到成功",
+    "value2": "- 与CGS同行"
   },
   "about-us": {
+    "title": "关于我们",
     "about-us": "欢迎！我们是Crypto Genius Squad团队。我们从大使计划和在项目中部署节点开始，例如Rizon，BitSong，Gitopia，Desmos，KiChain，Nym，Masa，Medibloc等等。这一经验帮助我们在加密货币和区块链领域发展成专业人士。我们愿意积极参与大使计划，并为它们的发展做出贡献。"
   },
   "tasks": {
@@ -22,5 +28,8 @@
     "adItem2": "我们是有经验的专家，愿意参与您的大使计划。",
     "adItem3": "在超过15个项目中的经验。",
     "adItem4": "我们将适应您的任何任务。"
+  },
+  "our-team": {
+    "title": "我们的团队"
   }
 }
