@@ -1,6 +1,13 @@
 .container {
   padding: 0px 20px;
   display: flex;
+
+  @media (max-width: 768px) {
+    padding-top: 160px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 160px;
+  }
 }
 .team {
   width: 100%;
