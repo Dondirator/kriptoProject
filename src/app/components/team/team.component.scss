@@ -1,6 +1,11 @@
+.bgi {
+  background-color: #93cfd9;
+}
 .container {
   padding: 0px 20px;
   display: flex;
+  flex-direction: column;
+  gap: 50px;
   align-items: center;
   position: relative;
   padding-top: 180px;
@@ -10,16 +15,42 @@
   }
 }
 .team {
-  width: 100%;
-  position: absolute;
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+
+  &__value {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
 
   &__body {
     display: flex;
-    gap: 30px;
+    gap: 60px;
     flex-wrap: wrap;
     margin: 0 auto;
 
     align-items: center;
     justify-content: center;
+  }
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+    }
+
+    &__value {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+    }
   }
 }
