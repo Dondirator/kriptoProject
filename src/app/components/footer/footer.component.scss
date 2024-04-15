@@ -1,6 +1,6 @@
 .page {
   &__footer {
-    background-color: #d9d9d9;
+    background-color: white;
   }
 }
 .footer {
@@ -73,15 +73,16 @@
     position: absolute;
     width: fit-content;
     background-color: black;
-    padding: 4px 8px;
+    padding: 5px 12px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 16px;
     color: white;
     cursor: pointer;
+
     &:hover {
       font-weight: bold;
-      padding: 5px 9px;
+      padding: 6px 14px;
       transition: 0.3s ease;
       background-color: #28a745;
     }

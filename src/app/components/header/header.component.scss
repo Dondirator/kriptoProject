@@ -36,7 +36,7 @@
     position: relative;
     z-index: 3;
     img {
-      height: 80px;
+      height: 120px;
       max-width: 100%;
       @media (max-width: 767px) {
         height: 60px;
@@ -215,6 +215,7 @@
 // }
 
 .lang {
+  width: 60px;
   display: flex;
   li {
     position: relative;

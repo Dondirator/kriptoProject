@@ -1,5 +1,5 @@
 .bgi {
-  background-color: #93cfd9;
+  background-color: #f5f5f5;
 }
 .container {
   padding: 0px 20px;
@@ -8,7 +8,7 @@
   gap: 50px;
   align-items: center;
   position: relative;
-  padding-top: 180px;
+  padding-top: 160px;
   padding-bottom: 35px;
   @media (max-width: 767px) {
     padding-top: 160px;
@@ -16,17 +16,11 @@
 }
 .team {
   &__title {
+    padding-bottom: 30px;
     font-size: 48px;
     font-weight: bold;
     text-align: center;
-    color: white;
-  }
-
-  &__value {
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
+    color: black;
   }
 
   &__body {
@@ -34,6 +28,8 @@
     gap: 60px;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding: 0 20px;
+    padding-bottom: 60px;
 
     align-items: center;
     justify-content: center;
@@ -43,14 +39,6 @@
       font-size: 36px;
       font-weight: bold;
       text-align: center;
-      color: white;
-    }
-
-    &__value {
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center;
-      color: white;
     }
   }
 }
