@@ -1,15 +1,19 @@
 <section style="padding-bottom: 80px" class="page__reviews reviews">
   <div class="container">
     <div class="reviews__body">
-      <h2 class="reviews__title title-rigth">Reviews</h2>
+      <h2 class="reviews__title title-left">Reviews</h2>
       <div class="reviews__carousel">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide" *ngFor="let slide of slides">
-              <img src="{{ slide.img }}" alt="" />
-              <div class="subtitle">{{ slide.title }}</div>
-              <div class="value">{{ slide.subtitle }}</div>
-              <div class="value">{{ slide.content }}</div>
+              <div class="swiper-slide-head">
+                <img src="{{ slide.img }}" alt="" />
+                <div>
+                  <div class="subtitle">{{ slide.title }}</div>
+                  <div class="value">{{ slide.subtitle }}</div>
+                </div>
+              </div>
+              <div class="subvalue">{{ slide.content }}</div>
             </div>
           </div>
           <!-- If you need pagination -->

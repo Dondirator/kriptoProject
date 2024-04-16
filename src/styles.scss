@@ -27,9 +27,10 @@ a {
   list-style: none;
 }
 .title-left {
-  background: linear-gradient(to right, #c0c0c0, rgba(255, 255, 255, 0) 100%);
-  width: 50%;
-  padding: 5px 15px;
+  margin-left: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 12px 20px;
   font-size: 36px;
   color: black;
   font-weight: bold;
