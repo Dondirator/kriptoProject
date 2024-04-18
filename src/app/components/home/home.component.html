@@ -5,12 +5,14 @@
     <div class="our-history__container container">
       <div class="our-history__body-block">
         <div class="our-history__body">
-          <h2 class="our-history__title">
-            {{ text("about-us.title") }}
-          </h2>
-          <p class="our-history__value">
-            {{ text("about-us.about-us") }}
-          </p>
+          <h2
+            class="our-history__title"
+            [innerHTML]="text('about-us.title')"
+          ></h2>
+          <p
+            class="our-history__value"
+            [innerHTML]="text('about-us.about-us')"
+          ></p>
         </div>
         <div class="left-block">
           <img src="../../../assets/images/about-us-logo.png" alt="" />

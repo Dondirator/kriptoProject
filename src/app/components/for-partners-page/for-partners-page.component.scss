@@ -59,7 +59,7 @@
 }
 .advantage {
   &__body {
-    margin: 0 20px;
+    text-align: center;
   }
 
   &__title {
@@ -79,6 +79,7 @@
     align-items: center;
     flex: 0 1 48%;
     gap: 10px;
+    text-align: left;
 
     img {
       padding: 20px 10px 20px 20px;
