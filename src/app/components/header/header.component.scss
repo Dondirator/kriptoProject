@@ -36,10 +36,11 @@
     position: relative;
     z-index: 3;
     img {
-      height: 90px;
-      max-width: 100%;
+      height: 80px;
+      max-width: 90%;
       @media (max-width: 767px) {
         height: 60px;
+        max-width: 100%;
       }
     }
   }
