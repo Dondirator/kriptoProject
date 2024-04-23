@@ -27,9 +27,21 @@
     "adItem1": "Our cohesive team has been working together for more than a year.",
     "adItem2": "We are experienced specialists ready to participate in your ambassador program.",
     "adItem3": "Experience in over 15 projects.",
-    "adItem4": "We will adapt to any of your tasks."
+    "adItem4": "We will adapt to any of your tasks.",
+    "adButton": "Submit an application"
   },
   "our-team": {
-    "title": "Our Team"
+    "title": "Our Team",
+    "berimir": "Programmer, node operator, and founder of the 'CGS' team, crypto-analyst, and investor",
+    "porhol": "Co-founder of the 'CGS' team, PR manager.",
+    "shakal": "Web designer, programmer.",
+    "splow": "Backend developer.",
+    "nick": "Copywriter.",
+    "dondi": "Backend developer, Frontend developer, Web developer, Web designer.",
+    "hleb": "Crypto-analyst and investor"
+  },
+  "footer": {
+    "follow": "Follow us:",
+    "adButton": "Submit an application"
   }
 }
