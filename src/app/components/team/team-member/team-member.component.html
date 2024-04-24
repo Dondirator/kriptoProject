@@ -1,1 +1,22 @@
-
+<div class="team__body">
+  <div class="team-member__body" *ngFor="let user of users">
+    <div class="team-member__value-block">
+      <h2 class="team-member__nick">{{ user.name }}</h2>
+      <div class="team-member__img">
+        <img src="{{ user.imgPath }}" alt="" />
+      </div>
+      <div class="team-member__desc">
+        <div style="cursor: pointer" (click)="toggleDropdown(user)">
+          {{ user | Desc : trigger }}
+          <span class="arrow-down" [ngClass]="{ arrowup: user.isOpen }"></span>
+        </div>
+        <div></div>
+        <div class="team-member__dropdown" [ngClass]="{ active: user.isOpen }">
+          <p style="padding-top: 10px">
+            {{ user | SecondDesc : trigger }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

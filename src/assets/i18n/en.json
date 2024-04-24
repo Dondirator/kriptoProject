@@ -9,7 +9,7 @@
     "value2": "success - with CGS"
   },
   "about-us": {
-    "title": "From idea to success - with CGS",
+    "title": "From idea to success <br> with CGS",
     "about-us": "Welcome! We are the Crypto Genius Squad.<br> <br> We started with ambassadorship and node deployment in projects such as Rizon, BitSong, Gitopia, Desmos, KiChain, Nym, Masa, Medibloc, and others. This experience helped us evolve into professionals in the cryptocurrency and blockchain sphere.<br> <br> We are ready to actively participate in ambassadorial projects and contribute to their development."
   },
   "tasks": {
@@ -32,16 +32,16 @@
   },
   "our-team": {
     "title": "Our Team",
-    "berimir": "Programmer, node operator, and founder of the 'CGS' team, crypto-analyst, and investor",
-    "porhol": "Co-founder of the 'CGS' team, PR manager.",
-    "shakal": "Web designer, programmer.",
+    "berimir": "crypto-analyst",
+    "porhol": "PR manager.",
+    "shakal": "Web designer",
     "splow": "Backend developer.",
     "nick": "Copywriter.",
-    "dondi": "Backend developer, Frontend developer, Web developer, Web designer.",
-    "hleb": "Crypto-analyst and investor"
+    "dondi": "Frontend developer",
+    "hleb": "Crypto-analyst"
   },
   "footer": {
     "follow": "Follow us:",
-    "adButton": "Submit an application"
+    "adButton": "apply"
   }
 }

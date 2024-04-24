@@ -18,6 +18,8 @@ import { TeamComponent } from './components/team/team.component';
 import { TeamMemberComponent } from './components/team/team-member/team-member.component';
 //
 import { ReviewCarouselSectionComponent } from './components/for-partners-page/review-carousel-section/review-carousel-section.component';
+import { DescPipe } from './pipes/desc.pipe';
+import { SecondDescPipe } from './pipes/secondDesck.pipe';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,9 @@ import { ReviewCarouselSectionComponent } from './components/for-partners-page/r
     ReviewCarouselSectionComponent,
     TeamComponent,
     TeamMemberComponent,
+    //pipes
+    DescPipe,
+    SecondDescPipe,
   ],
   imports: [
     BrowserModule,

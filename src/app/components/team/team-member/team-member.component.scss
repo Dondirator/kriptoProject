@@ -1,13 +1,39 @@
-.team-member {
+.team {
   &__body {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-bottom: 60px;
+
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+//===========================
+
+.team-member {
+  position: relative;
+  overflow: hidden;
+  &__body {
+    padding-bottom: 80px;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     width: 200px;
+    box-sizing: border-box;
   }
 
   &__img {
-    position: relative;
-    z-index: 6;
+    z-index: 5;
     img {
       width: 150px;
       outline: 1px solid black;
@@ -26,15 +52,73 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 254);
+
     margin: -20px;
     border-radius: 25px;
+
+    position: relative;
+    z-index: 500;
   }
 
   &__nick {
+    z-index: 5;
   }
 
   &__desc {
+    z-index: 1;
     font-size: 18px;
+    padding: 0 20px;
+    font-weight: 600;
+  }
+
+  &__dropdown {
+    top: 0; /* Скрываем блок за главным блоком */
+    left: 0;
+    position: absolute;
+    z-index: 1; /* Дропдаун будет "под" главным блоком */
+    padding: 0 10px;
+    background-color: white;
+    border-radius: 25px;
+    transition: top 0.3s ease;
+    overflow: hidden;
+    p {
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      overflow: hidden; /* Скрыть содержимое, которое выходит за пределы блока */
+    }
+  }
+}
+
+.arrow-down {
+  margin-top: 3px;
+  margin-left: 5px;
+  position: absolute;
+  border: solid #000000;
+  border-width: 0px 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  transition: ease 0.5s;
+}
+.arrowup {
+  transform: rotate(225deg);
+  margin-top: 7px;
+
+  transition: ease 0.5s;
+}
+.active {
+  top: 90%; /* Показываем блок "выезжающим" из-под главного блока */
+  display: flex;
+  z-index: 5435;
+  transition: ease 0.3s;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding-bottom: 15px;
+
+  p {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
