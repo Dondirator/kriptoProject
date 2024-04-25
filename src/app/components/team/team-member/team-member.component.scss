@@ -23,6 +23,23 @@
 .team-member {
   position: relative;
   overflow: hidden;
+
+  &__telegram {
+    padding-left: 18px;
+    padding-top: 18px;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+
+    a {
+      &:hover svg path {
+        fill: #0088cc;
+        transition: ease 0.3s;
+      }
+    }
+  }
+
   &__body {
     padding-bottom: 80px;
     z-index: 2;
@@ -45,7 +62,8 @@
   }
 
   &__value-block {
-    padding: 30px 0px;
+    padding-bottom: 30px;
+    padding-top: 20px;
     text-align: center;
     display: flex;
     gap: 14px;

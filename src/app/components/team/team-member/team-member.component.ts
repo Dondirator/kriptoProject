@@ -15,10 +15,10 @@ export interface SecondLocalCoco {
 export interface User {
   id: number;
   name: string;
-  desc: string;
+
   localDesc: Array<LocalCoco>;
   localSecondDesc: Array<SecondLocalCoco>;
-  secondDesc: string;
+
   imgPath: string;
   isOpen: boolean;
 }
@@ -33,8 +33,7 @@ export class TeamMemberComponent {
     {
       id: 1,
       name: 'Berimir',
-      desc: this.translocoService.translate('our-team.dondi'),
-      secondDesc: 'hgfkgj fkjsdh fjsdh jfhdsjfhsd jsjshdffj ',
+
       imgPath: '../../../assets/images/team-icons/Berimir.jpg',
       localDesc: [
         { lang: 'ru', value: 'крипто-аналитик' },
@@ -62,8 +61,7 @@ export class TeamMemberComponent {
     {
       id: 2,
       name: 'Porhol',
-      desc: this.translocoService.translate('our-team.porhol', {}, 'en'),
-      secondDesc: 'hgfkgj fkjsdh fjsdh jfhdsjfhsd jsjshdffj ',
+
       imgPath: '../../../assets/images/team-icons/Porhol.jpg',
       localDesc: [
         { lang: 'ru', value: 'PR-менеджер' },
@@ -89,8 +87,7 @@ export class TeamMemberComponent {
     {
       id: 3,
       name: 'Splow',
-      desc: 'FrontEnd',
-      secondDesc: 'hgfkgj fkjsdh fjsdh jfhdsjfhsd jsjshdffj ',
+
       imgPath: '../../../assets/images/team-icons/Splow.jpg',
       localDesc: [
         { lang: 'ru', value: 'Backend разработчик' },
@@ -107,8 +104,7 @@ export class TeamMemberComponent {
     {
       id: 4,
       name: 'Shakal',
-      desc: 'FrontEnd',
-      secondDesc: 'hgfkgj fkjsdh fjsdh jfhdsjfhsd jsjshdffj ',
+
       imgPath: '../../../assets/images/team-icons/Shakal.jpg',
       localDesc: [
         { lang: 'ru', value: 'веб-дизайнер' },
@@ -125,8 +121,7 @@ export class TeamMemberComponent {
     {
       id: 5,
       name: 'Nick',
-      desc: 'FrontEnd',
-      secondDesc: 'hgfkgj fkjsdh fjsdh jfhdsjfhsd jsjshdffj ',
+
       imgPath: '../../../assets/images/team-icons/Nik.jpg',
       localDesc: [
         { lang: 'ru', value: 'копирайтер' },
@@ -143,8 +138,7 @@ export class TeamMemberComponent {
     {
       id: 6,
       name: 'Dondi',
-      desc: 'FrontEnd',
-      secondDesc: 'hgfkgj fkjsdh fjsdh jfhdsjfhsd jsjshdffj ',
+
       imgPath: '../../../assets/images/team-icons/Dondi.jpg',
       localDesc: [
         { lang: 'ru', value: 'Frontend разработчик' },
@@ -172,8 +166,7 @@ export class TeamMemberComponent {
     {
       id: 7,
       name: 'Hleb',
-      desc: 'FrontEnd',
-      secondDesc: 'hgfkgj fkjsdh fjsdh jfhdsjfhsd jsjshdffj ',
+
       imgPath: '../../../assets/images/team-icons/Dondi.jpg',
       localDesc: [
         { lang: 'ru', value: 'крипто-аналитик' },
