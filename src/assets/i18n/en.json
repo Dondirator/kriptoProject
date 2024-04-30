@@ -43,5 +43,10 @@
   "footer": {
     "follow": "Follow us:",
     "adButton": "apply"
+  },
+  "p2e": {
+    "hamster": "Make your way from the shaved hamster to the grandmaster CEO of the tier-1 crypto exchange",
+    "catizen": "Catizen is a game that allows you to earn cryptocurrency by taking care of virtual cats. For participating in the game, $CATS tokens are awarded, which will be distributed among the players.",
+    "notcoin": "Notcoin is a Telegram game where you get Notcoin for clicking on a coin. Players join squads (channels and Telegram chats), invite friends, complete tasks, and climb to the top of leaderboards."
   }
 }

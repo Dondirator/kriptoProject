@@ -16,6 +16,7 @@ import { ForPartnersPageComponent } from './components/for-partners-page/for-par
 import { AboutUsSectionComponent } from './components/sections/about-us-section/about-us-section.component';
 import { TeamComponent } from './components/team/team.component';
 import { TeamMemberComponent } from './components/team/team-member/team-member.component';
+import { PTwoEPageComponent } from './components/p-two-e-page/p-two-e-page.component';
 //
 import { ReviewCarouselSectionComponent } from './components/for-partners-page/review-carousel-section/review-carousel-section.component';
 import { DescPipe } from './pipes/desc.pipe';
@@ -35,6 +36,7 @@ import { SecondDescPipe } from './pipes/secondDesck.pipe';
     ForPartnersPageComponent,
     ReviewCarouselSectionComponent,
     TeamComponent,
+    PTwoEPageComponent,
     TeamMemberComponent,
     //pipes
     DescPipe,

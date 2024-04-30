@@ -1,0 +1,37 @@
+<app-header></app-header>
+<ng-container *transloco="let text">
+  <section class="p2e__page">
+    <div class="p2e__container container">
+      <div class="p2e__items">
+        <div class="p2e__item item">
+          <h2 class="item__title">Hamster Kombat</h2>
+          <div class="item__image-body">
+            <img src="../../../assets/images/p2e/humster.jpg" alt="" />
+          </div>
+          <p class="item__value">
+            {{ text("p2e.hamster") }}
+          </p>
+        </div>
+        <div class="p2e__item item">
+          <h2 class="item__title">NotCoin</h2>
+          <div class="item__image-body">
+            <img src="../../../assets/images/p2e/ecoin.jpg" alt="" />
+          </div>
+          <p class="item__value">
+            {{ text("p2e.notcoin") }}
+          </p>
+        </div>
+        <div class="p2e__item item">
+          <h2 class="item__title">Catizen</h2>
+          <div class="item__image-body">
+            <img src="../../../assets/images/p2e/cats.jpg" alt="" />
+          </div>
+          <p class="item__value">
+            {{ text("p2e.catizen") }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</ng-container>
+<app-footer></app-footer>
