@@ -1,31 +1,47 @@
 <app-header></app-header>
 <ng-container *transloco="let text">
+  <section class="page__our-history our-history">
+    <div class="our-history__container container">
+      <div class="our-history__body-block">
+        <div class="our-history__body">
+          <p class="our-history__value" [innerHTML]="text('p2e.p2e-value')"></p>
+        </div>
+        <a href="https://t.me/C_G_Squad" class="left-block">
+          <img src="../../../assets/images/about-us-logo.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="p2e__page">
     <div class="p2e__container container">
       <div class="p2e__items">
         <div class="p2e__item item">
           <h2 class="item__title">Hamster Kombat</h2>
-          <div class="item__image-body">
+          <a href="https://hamsterkombat.io/ru" class="item__image-body">
             <img src="../../../assets/images/p2e/humster.jpg" alt="" />
-          </div>
+          </a>
           <p class="item__value">
             {{ text("p2e.hamster") }}
           </p>
         </div>
         <div class="p2e__item item">
           <h2 class="item__title">NotCoin</h2>
-          <div class="item__image-body">
+          <a
+            href="https://notcoin.notion.site/Notcoin-7b5b677cb71c494b96255a374461da81"
+            class="item__image-body"
+          >
             <img src="../../../assets/images/p2e/ecoin.jpg" alt="" />
-          </div>
+          </a>
           <p class="item__value">
             {{ text("p2e.notcoin") }}
           </p>
         </div>
         <div class="p2e__item item">
           <h2 class="item__title">Catizen</h2>
-          <div class="item__image-body">
+          <a href="https://catizen.ai" class="item__image-body">
             <img src="../../../assets/images/p2e/cats.jpg" alt="" />
-          </div>
+          </a>
           <p class="item__value">
             {{ text("p2e.catizen") }}
           </p>

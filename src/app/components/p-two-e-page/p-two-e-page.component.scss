@@ -38,7 +38,7 @@
 
   padding: 0 20px;
   &__title {
-    background-color: #e4e4e4;
+    background-color: #f5f5f5;
     margin-top: 20px;
     padding: 15px 0px;
     width: 305px;
@@ -56,7 +56,7 @@
 
   &__value {
     width: 245px;
-    background-color: #e4e4e4;
+    background-color: #f5f5f5;
     border-radius: 35px;
     min-height: 155px;
     padding: 15px 30px 15px 30px;
@@ -68,6 +68,108 @@
     &__value {
       min-height: 0;
       padding-bottom: 20px;
+    }
+  }
+}
+///////////////////////////////////////////////////////
+///
+///
+
+.page {
+  &__our-history {
+    background-color: #f5f5f5;
+    background-position: 100% 23%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 135px;
+    padding-bottom: 20px;
+    @media (max-width: 767px) {
+      padding-top: 100px;
+    }
+  }
+}
+.our-history {
+  &__container {
+    width: 100%;
+  }
+  &__body-block {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .left-block {
+    text-align: center;
+    align-items: center;
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+    width: 40%;
+    height: 100%;
+  }
+  &__body {
+    padding: 0 20px;
+    width: 60%;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 48px;
+    padding-left: 30px;
+  }
+
+  &__value {
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 15px;
+    margin: 0 20px;
+    font-size: 30px;
+    color: black;
+    padding-bottom: 20px;
+    p {
+      br {
+        line-height: 2em; /* Установите желаемый размер отступа */
+        display: block; /* Гарантирует корректное применение line-height */
+        content: ""; /* Добавляет отступ между <br> */
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 24px;
+    }
+    &__body {
+      width: 100%;
+    }
+    &__value {
+      font-size: 20px;
+      color: black;
+    }
+
+    &__body-block {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .left-block {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      img {
+        max-width: 55%;
+        height: auto;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    &__value {
+      font-size: 18px;
+      color: black;
+    }
+    .left-block {
+      img {
+        max-width: 50%;
+        height: auto;
+      }
     }
   }
 }
