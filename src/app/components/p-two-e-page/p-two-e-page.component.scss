@@ -46,11 +46,42 @@
     border-radius: 35px;
   }
 
+  &__img-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    p {
+      font-weight: bold;
+
+      cursor: default;
+
+      padding: 10px 30px;
+      border-radius: 25px;
+      background-color: white;
+      position: absolute;
+
+      text-align: center;
+      top: 45%;
+    }
+    .item__image-body {
+      img {
+        opacity: 0.5;
+      }
+    }
+  }
+
   &__image-body {
+    overflow: hidden;
+    border-radius: 35px;
     img {
       width: 305px;
       height: 280px;
       border-radius: 35px;
+
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
