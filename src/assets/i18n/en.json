@@ -45,9 +45,9 @@
     "adButton": "apply"
   },
   "p2e": {
-    "p2e-value": "P2E (play-to-earn) — allows people to earn real money by playing games and/or providing other services in a gaming environment using cryptocurrency. It is a community-driven business model that offers players a stake as well as the opportunity to collaborate with developers to contribute to the game. In our telegram channel dedicated to P2E projects, we post current games and earnings guides. ",
+    "p2e-value": "<b>P2E (play-to-earn)</b> — allows people to earn real money by playing games and/or providing other services in a gaming environment using cryptocurrency. It is a community-driven business model that offers players a stake as well as the opportunity to collaborate with developers to contribute to the game. In our telegram channel dedicated to P2E projects, we post current games and earnings guides. ",
     "hamster": "Make your way from the shaved hamster to the grandmaster CEO of the tier-1 crypto exchange",
-    "catizen": "Catizen is a game that allows you to earn cryptocurrency by taking care of virtual cats. For participating in the game, $CATS tokens are awarded, which will be distributed among the players.",
-    "notcoin": "Notcoin is a Telegram game where you get Notcoin for clicking on a coin. Players join squads (channels and Telegram chats), invite friends, complete tasks, and climb to the top of leaderboards."
+    "catizen": "<b>Catizen</b> is a game that allows you to earn cryptocurrency by taking care of virtual cats. For participating in the game, $CATS tokens are awarded, which will be distributed among the players.",
+    "notcoin": "<b>Notcoin</b> is a Telegram game where you get Notcoin for clicking on a coin. Players join squads (channels and Telegram chats), invite friends, complete tasks, and climb to the top of leaderboards."
   }
 }
