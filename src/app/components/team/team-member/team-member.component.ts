@@ -102,6 +102,34 @@ export class TeamMemberComponent {
       isOpen: false,
     },
     {
+      id: 6,
+      name: 'Dondi',
+
+      imgPath: '../../../assets/images/team-icons/Dondi.jpg',
+      localDesc: [
+        { lang: 'ru', value: 'Frontend разработчик' },
+        { lang: 'en', value: 'Frontend developer' },
+        { lang: 'cn', value: '前端开发人员' },
+      ],
+      localSecondDesc: [
+        {
+          lang: 'ru',
+          value:
+            'Backend разработчик, Frontend разработчик, Веб-разработчик, Веб-дизайнер.',
+        },
+        {
+          lang: 'en',
+          value:
+            'Backend developer, Frontend developer, Web developer, Web designer.',
+        },
+        {
+          lang: 'cn',
+          value: '后端开发人员，前端开发人员，网页开发人员，网页设计师。',
+        },
+      ],
+      isOpen: false,
+    },
+    {
       id: 4,
       name: 'Shakal',
 
@@ -135,34 +163,7 @@ export class TeamMemberComponent {
       ],
       isOpen: false,
     },
-    {
-      id: 6,
-      name: 'Dondi',
 
-      imgPath: '../../../assets/images/team-icons/Dondi.jpg',
-      localDesc: [
-        { lang: 'ru', value: 'Frontend разработчик' },
-        { lang: 'en', value: 'Frontend developer' },
-        { lang: 'cn', value: '前端开发人员' },
-      ],
-      localSecondDesc: [
-        {
-          lang: 'ru',
-          value:
-            'Backend разработчик, Frontend разработчик, Веб-разработчик, Веб-дизайнер.',
-        },
-        {
-          lang: 'en',
-          value:
-            'Backend developer, Frontend developer, Web developer, Web designer.',
-        },
-        {
-          lang: 'cn',
-          value: '后端开发人员，前端开发人员，网页开发人员，网页设计师。',
-        },
-      ],
-      isOpen: false,
-    },
     {
       id: 7,
       name: 'Hleb',
