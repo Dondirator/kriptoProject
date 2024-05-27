@@ -16,6 +16,20 @@
       text-align: center;
     }
   }
+  &__heading {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 25px;
+  }
+
+  &__cont {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 //===========================
 
@@ -93,7 +107,7 @@
   }
 
   &__dropdown {
-    top: 0; /* Скрываем блок за главным блоком */
+    top: 20px; /* Скрываем блок за главным блоком */
     left: 0;
     position: absolute;
     z-index: 1; /* Дропдаун будет "под" главным блоком */

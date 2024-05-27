@@ -28,7 +28,7 @@
     "adItem2": "我们是有经验的专家，愿意参与您的大使计划。",
     "adItem3": "在超过15个项目中的经验。",
     "adItem4": "我们将适应您的任何任务。",
-    "adButton": ""
+    "adButton": "提交申请"
   },
   "our-team": {
     "title": "我们的团队",
@@ -38,7 +38,10 @@
     "splow": "后端开发人员。",
     "nick": "文案撰稿人。",
     "dondi": "前端开发人员",
-    "hleb": "密码分析师"
+    "hleb": "密码分析师",
+    "team-management": "团队管理",
+    "developers": "开发商",
+    "design": "设计"
   },
   "footer": {
     "follow": "请关注我们",

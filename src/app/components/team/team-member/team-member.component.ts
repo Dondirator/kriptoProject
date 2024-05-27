@@ -114,17 +114,15 @@ export class TeamMemberComponent {
       localSecondDesc: [
         {
           lang: 'ru',
-          value:
-            'Backend разработчик, Frontend разработчик, Веб-разработчик, Веб-дизайнер.',
+          value: '',
         },
         {
           lang: 'en',
-          value:
-            'Backend developer, Frontend developer, Web developer, Web designer.',
+          value: '',
         },
         {
           lang: 'cn',
-          value: '后端开发人员，前端开发人员，网页开发人员，网页设计师。',
+          value: '',
         },
       ],
       isOpen: false,
